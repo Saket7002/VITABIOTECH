@@ -1,29 +1,34 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# ========================
+# Dependencies
+# ========================
+node_modules/
+Backend/node_modules/
+vitabiotech/node_modules/
 
-# testing
-/coverage
+# ========================
+# Production Build
+# ========================
+build/
+vitabiotech/build/
 
-# production
-/build
+# ========================
+# Environment Files
+# ========================
+.env
+Backend/.env
+vitabiotech/.env
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# ========================
+# Logs
+# ========================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-node_modules/
-Backend/node_modules/
-vitabiotech/node_modules/
-build/
-.env
+# ========================
+# OS / Misc
+# ========================
+.DS_Store
+coverage/
