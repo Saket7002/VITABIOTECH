@@ -1,0 +1,173 @@
+.goods-container {
+  padding: 20px;
+  background-color: #f9fafb;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #1f2a7c;
+}
+
+.goods-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-left: 1px;
+}
+
+.goods-table th,
+.goods-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.goods-table th {
+  background-color: #1f2a7c;
+  color: #fff;
+  font-weight: 600;
+}
+
+.goods-table input {
+  width: 80px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+.goods-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* Top button row */
+.g1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Back & Home buttons */
+.g2 {
+  background: linear-gradient(135deg, #1f2a7c, #3f51ff);
+  color: #ffffff;
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.g2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 42, 124, 0.4);
+}
+.g3 {
+  background: linear-gradient(135deg, #1f2a7c, #3f51ff);
+  color: #ffffff;
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.g3:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 42, 124, 0.4);
+}
+.month-select1{
+  width: 240px;
+  height: 40px;
+  margin-left: 530px;
+}
+/* ================= RESPONSIVE ================= */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .month-select1 {
+    margin-left: 0;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .goods-table {
+    font-size: 14px;
+  }
+
+  .goods-table input {
+    width: 65px;
+  }
+
+  .g1 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .goods-container {
+    padding: 10px;
+  }
+
+  .title {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+
+  .month-select1 {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Horizontal scroll instead of breaking table */
+  .goods-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .goods-table th,
+  .goods-table td {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .goods-table input {
+    width: 55px;
+    padding: 4px;
+  }
+
+  .g1 {
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .g2,
+  .g3 {
+    width: 95px;
+    font-size: 15px;
+  }
+
+  .goods-table th,
+  .goods-table td {
+    font-size: 12px;
+  }
+}

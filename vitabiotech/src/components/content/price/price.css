@@ -1,0 +1,155 @@
+body {
+  background-color: #f4f6fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+h1 {
+  margin-top: 90px;
+  text-align: center;
+  color: #222e88;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.p1 {
+  float: right;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #222e88;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.p1:hover {
+  background-color: #2f3fd1;
+}
+.priceList {
+  width: 95%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.priceList thead th {
+  background-color: #222e88;
+  color: #fff;
+  padding: 14px 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priceList tbody td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e6e6e6;
+}
+.priceList tbody td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #222e88;
+}
+.priceList tbody tr:nth-child(even) {
+  background-color: #f8f9ff;
+}
+.priceList tbody tr:last-child td {
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+}
+
+.priceList tbody tr:last-child td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #222e88;
+}
+.priceList tbody tr:hover {
+  background-color: #eef1ff;
+  transition: background 0.2s;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .priceList {
+    font-size: 12px;
+  }
+}
+/* ===================== */
+/* RESPONSIVE FIXES ONLY */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 26px;
+    margin-top: 80px;
+  }
+
+  .p1 {
+    margin-right: 30px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .priceList {
+    width: 98%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+    margin-top: 70px;
+  }
+
+  /* Button alignment */
+  .p1 {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
+    font-size: 14px;
+  }
+
+  /* Table scroll instead of breaking */
+  .priceList {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .priceList thead th,
+  .priceList tbody td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .p1 {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .priceList thead th,
+  .priceList tbody td {
+    font-size: 11px;
+    padding: 6px;
+  }
+}
+

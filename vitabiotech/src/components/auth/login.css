@@ -1,0 +1,101 @@
+body{
+    background-color: #EDEAF5;
+}
+.main-container{
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 12px;
+    box-shadow: 20px;
+}
+.container{
+    display: flex;
+}
+.container-box1{
+    margin-top: 65px;
+}
+.logo-container{
+  width: 300px;
+  height: 250px;
+  background-image: url("../images/vita.png");
+  background-size: contain;    
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+.welcome-tag{
+    color: #1F2A7C;  
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.welcome-tag1{
+    color: #1F2A7C;  
+    margin-top: 4px;
+    margin-left: 80px;
+}
+.container-box2{
+    margin-top: 90px;
+    margin-left: 55px;
+}
+.box2-heading{
+    color: #1F2A7C;  
+}
+.email-container{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    border: solid #D1D5DB 1px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08)
+}
+.email-container:active{
+    border: solid #1F2A7C 1px;
+
+}
+.password-container{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    border: solid #D1D5DB 1px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08)
+}
+.password-container:active{
+    border: solid #1F2A7C 1px;
+}
+.login-btn{
+    display: inline-block;
+    margin-top: 25px;
+    height: 44px;
+    width: 100%;
+    max-width: 340px;
+    padding: 0 18px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #1F2A7C;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .3px;
+    box-shadow: 0 8px 20px rgba(32,32,116,0.12);
+    transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+}
+
+.login-btn:hover{
+    transform: translateY(-3px);
+    filter:brightness(1.02)
+}
+.login-btn:active{
+    transform: translateY(0)
+}
+
+.box-3{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.link-to-signup{
+    text-decoration: none;
+}
+.link-to-signup:hover{
+    text-decoration: underline;
+}

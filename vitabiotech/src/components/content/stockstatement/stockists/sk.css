@@ -1,0 +1,141 @@
+.back-sk {
+  background: linear-gradient(135deg, #1f2a7c, #3f51ff);
+  color: #ffffff;
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.back-sk:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 42, 124, 0.4);
+}
+.back-sk1 {
+  background: linear-gradient(135deg, #1f2a7c, #3f51ff);
+  color: #ffffff;
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.back-sk1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 42, 124, 0.4);
+
+}
+.sk2 {
+  background: linear-gradient(135deg, #1f2a7c, #3f51ff);
+  color: #ffffff;
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 950px;
+}
+
+.sk2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 42, 124, 0.4);
+
+}
+.month-select{
+  width: 240px;
+  height: 40px;
+  margin-left: 530px;
+}
+.goods-table tbody tr:last-child td {
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+}
+
+.goods-table tbody tr:last-child td:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+/* ========================= */
+/* RESPONSIVE FIXES */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .sk2 {
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+  }
+
+  .month-select {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sk2,
+  .back-sk,
+  .back-sk1 {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .sk2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .month-select {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Table horizontal scroll */
+  .goods-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .sk2,
+  .back-sk,
+  .back-sk1 {
+    width: 90px;
+    font-size: 15px;
+  }
+
+  .month-select {
+    width: 180px;
+    height: 36px;
+  }
+}
+
+

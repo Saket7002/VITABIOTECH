@@ -1,0 +1,131 @@
+.sale-title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Month dropdown */
+.month-select {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Table wrapper fix */
+.sale-table {
+  width: 95%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  table-layout: fixed; /* 🔥 VERY IMPORTANT */
+  background: #fff;
+}
+
+/* Table head */
+.sale-table thead th {
+  background-color: #1f2a7c;
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Table cells */
+.sale-table td {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* PRODUCT column LEFT aligned */
+.sale-table td:first-child,
+.sale-table th:first-child {
+  text-align: left;
+  padding-left: 15px;
+  width: 50%;
+}
+
+/* Quantity column */
+.sale-table td:nth-child(2),
+.sale-table th:nth-child(2) {
+  width: 25%;
+}
+
+/* Value column */
+.sale-table td:nth-child(3),
+.sale-table th:nth-child(3) {
+  width: 25%;
+}
+
+.sale-table tbody tr:last-child td {
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+}
+
+.sale-table tbody tr:last-child td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+/* ========================= */
+/* RESPONSIVE – SALE TABLE */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .sale-title {
+    font-size: 24px;
+  }
+
+  .sale-table {
+    width: 98%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sale-title {
+    margin-top: 80px;
+    font-size: 22px;
+  }
+
+  .month-select {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  /* Enable horizontal scroll */
+  .sale-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .sale-table th,
+  .sale-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .sale-title {
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  .month-select {
+    width: 180px;
+    padding: 6px 10px;
+  }
+
+  .sale-table th,
+  .sale-table td {
+    font-size: 11px;
+    padding: 6px;
+  }
+}
