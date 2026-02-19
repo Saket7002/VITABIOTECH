@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://vitabiotech-backend.onrender.com/api/login",  {
+    const res = await fetch("https://vitabiotech.onrender.com/api/login",  {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
