@@ -31,6 +31,11 @@ body{
    margin-left: 60px; 
    margin-top: 60px;
 }
+.welcome-tag{
+    color: #1F2A7C;  
+    margin-top: 20px;
+    margin-left: 60px;
+}
 .welcome-tag1-signup{
    color: #1F2A7C;  
    margin-top: 4px;
@@ -159,4 +164,102 @@ body{
     font-size: 14px;
     color: #6B7280;
     text-align: center;
+}
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablet Screens */
+@media (max-width: 992px) {
+    .signup-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .signup-box1 {
+        margin-left: 0;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .logo-container-signup {
+        margin: 40px auto 0;
+    }
+
+    .welcome-tag,
+    .welcome-tag1-signup {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    .signup-container {
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    .signup-box1 {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .logo-container-signup {
+        width: 200px;
+        height: 180px;
+        margin: 30px auto 0;
+    }
+
+    .box {
+        padding: 20px 0;
+    }
+
+    .box1-heading1 {
+        font-size: 18px;
+        margin-left: 20px;
+        padding: 0 20px;
+    }
+
+    .input-group {
+        margin: 14px 20px 0;
+    }
+
+    .signup-btn {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+    .signup-para {
+        margin: 20px;
+        font-size: 13px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+    .logo-container-signup {
+        width: 160px;
+        height: 140px;
+    }
+
+    .firstname,
+    .lastname,
+    .email,
+    .password {
+        height: 44px;
+        font-size: 13px;
+    }
+
+    .signup-btn {
+        height: 44px;
+        font-size: 13px;
+    }
 }
